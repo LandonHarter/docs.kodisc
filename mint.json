@@ -3,8 +3,8 @@
     "name": "Kodisc Documentation",
     "favicon": "/brand/icon.svg",
     "logo": {
-        "light": "/brand/full.png",
-        "dark": "/brand/full.png"
+        "light": "/brand/full-transparent.svg",
+        "dark": "/brand/full-transparent.svg"
     },
     "colors": {
         "primary": "#383838",
@@ -33,18 +33,12 @@
         "type": "github",
         "url": "https://github.com/LandonHarter/docs.kodisc"
     },
-    "anchors": [
-        {
-            "name": "Introduction",
-            "icon": "keyboard",
-            "url": "/introduction",
-            "iconType": "solid"
-        }
-    ],
     "navigation": [
         {
             "group": "Getting Started",
-            "pages": ["introduction"]
+            "pages": ["introduction", "animate"],
+            "icon": "keyboard",
+            "iconType": "solid"
         }
     ],
     "footer": {
@@ -92,8 +86,6 @@
         ]
     },
     "feedback": {
-        "thumbsRating": true,
-        "suggestEdit": true,
-        "raiseIssue": true
+        "thumbsRating": true
     }
 }
