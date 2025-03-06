@@ -1,13 +1,99 @@
 {
+    "$schema": "https://mintlify.com/mint.json",
     "name": "Kodisc Documentation",
-    "favicon": "https://kodisc.com/brand/icon.svg",
-    "colors": {
-        "primary": "#000000"
+    "favicon": "/brand/icon.svg",
+    "logo": {
+        "light": "/brand/full.png",
+        "dark": "/brand/full.png"
     },
+    "colors": {
+        "primary": "#383838",
+        "light": "#000000",
+        "dark": "#000000",
+        "background": {
+            "light": "#FAFAFA",
+            "dark": "#FAFAFA"
+        }
+    },
+    "font": {
+        "family": "Geist"
+    },
+    "modeToggle": {
+        "default": "light",
+        "isHidden": true
+    },
+    "sidebar": {
+        "items": "card"
+    },
+    "rounded": "default",
+    "codeBlock": {
+        "mode": "dark"
+    },
+    "topbarCtaButton": {
+        "type": "github",
+        "url": "https://github.com/LandonHarter/docs.kodisc"
+    },
+    "anchors": [
+        {
+            "name": "Introduction",
+            "icon": "keyboard",
+            "url": "/introduction",
+            "iconType": "solid"
+        }
+    ],
     "navigation": [
         {
             "group": "Getting Started",
-            "pages": ["getting-started/*.md"]
+            "pages": ["introduction"]
         }
-    ]
+    ],
+    "footer": {
+        "socials": {
+            "x": "https://x.com/kodiscai",
+            "instagram": "https://www.instagram.com/kodiscai/",
+            "youtube": "https://www.youtube.com/channel/UCxBKjAknpEflf1Quq3waFgA",
+            "discord": "https://discord.gg/94GY44qsBg"
+        },
+        "links": [
+            {
+                "title": "Kodisc",
+                "links": [
+                    {
+                        "label": "Home",
+                        "url": "https://kodisc.com"
+                    },
+                    {
+                        "label": "Pricing",
+                        "url": "https://kodisc.com/pricing"
+                    },
+                    {
+                        "label": "FAQ",
+                        "url": "https://kodisc.com/faq"
+                    },
+                    {
+                        "label": "Contact",
+                        "url": "https://kodisc.com/contact"
+                    }
+                ]
+            },
+            {
+                "title": "Legal",
+                "links": [
+                    {
+                        "label": "Privacy Policy",
+                        "url": "https://kodisc.com/privacy"
+                    },
+                    {
+                        "label": "Terms of Service",
+                        "url": "https://kodisc.com/terms"
+                    }
+                ]
+            }
+        ]
+    },
+    "feedback": {
+        "thumbsRating": true,
+        "suggestEdit": true,
+        "raiseIssue": true
+    }
 }
