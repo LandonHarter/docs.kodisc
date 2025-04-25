@@ -42,7 +42,7 @@
         },
         {
             "group": "API",
-            "pages": ["api/video", "api/image", "api/render"],
+            "pages": ["generate-video", "generate-image", "render-video"],
             "icon": "code",
             "iconType": "solid"
         }
