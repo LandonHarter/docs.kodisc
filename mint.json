@@ -8,7 +8,7 @@
     },
     "colors": {
         "primary": "#383838",
-        "light": "#000000",
+        "light": "#ffffff",
         "dark": "#000000",
         "background": {
             "light": "#FAFAFA",
@@ -38,6 +38,12 @@
             "group": "Getting Started",
             "pages": ["introduction", "animate"],
             "icon": "keyboard",
+            "iconType": "solid"
+        },
+        {
+            "group": "API",
+            "pages": ["api/video", "api/image", "api/render"],
+            "icon": "code",
             "iconType": "solid"
         }
     ],
