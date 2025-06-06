@@ -6,13 +6,25 @@ description: "Generate images via the Kodisc API."
 `POST https://api.kodisc.com/generate/image`
 
 ## Body
-___Required___
+
+**_Required_**
+
 - `apiKey` (string): API key generated via the [Kodisc Dev](https://dev.kodisc.com/dashboard/keys) dashboard.
 - `prompt` (string): Prompt used to generate the image.
+
+**_Optional_**
+
+- `aspectRatio` (string?): Aspect ratio of generation. Must be 16:9 or 9:16 (mobile)
+- `colors` (string?): A JSON object stringified. Colors must be hex code. All color fields:
+  - "primary"
+  - "secondary"
+  - "background"
+  - "text"
 
 Body must be FormData in order to work.
 
 ## Response
+
 - `success` (boolean): Whether the request succeeded or not. It can fail due to multiple factors including invalid API key, insufficient credits, failed video generation (rare, also will not charge API key for a failed request)
 - `error` (string?): Error message if success is `false`.
 - `image` (string?): If the request succeeded, this is the URL of the generated image on Kodisc's CDN.
@@ -26,13 +38,13 @@ body.append("apiKey", "kodisc_xxxx");
 body.append("prompt", "Draw the function x^2");
 
 const response = await fetch("https://api.kodisc.com/generate/image", {
-    method: "POST",
-    body
+  method: "POST",
+  body,
 });
 const json = (await response.json()) as {
-    success: boolean;
-    error?: string;
-    image?: string;
-    code?: string;
+  success: boolean;
+  error?: string;
+  image?: string;
+  code?: string;
 };
 ```
