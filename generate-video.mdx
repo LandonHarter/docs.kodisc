@@ -21,6 +21,8 @@ description: "Generate a full video via the Kodisc API."
   - "background"
   - "text"
 - `fps` (string?): Number representing the framerate of the video
+- `voiceover` (boolean?): Whether or not to add AI voiceovers to the clip.
+- `voice` (string?): Voice that the AI voiceover uses if enabled. Voiceovers are provided by Azure and thus any voice from [this list](https://azure.microsoft.com/en-us/products/ai-services/ai-speech) can be used (ex. en-US-AriaNeural).
 
 Body must be FormData in order to work.
 
